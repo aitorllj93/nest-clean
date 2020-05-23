@@ -1,7 +1,7 @@
 {
   "name": "nest-clean",
   "description": "Nestjs Clean Architecture CLI Tool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "aitorllj93 @d3v0ps",
   "bin": {
     "nest-clean": "./bin/run"
