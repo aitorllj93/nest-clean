@@ -1,0 +1,10 @@
+
+import { ICommand } from 'src/core/application/commands';
+
+export class {{command.className}} implements ICommand {
+  constructor(
+{{#each command.props}}
+    public readonly {{this.name}}: {{this.type}},
+{{/each}}
+  ) {}
+}

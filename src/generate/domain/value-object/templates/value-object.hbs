@@ -1,0 +1,16 @@
+
+import { ValueObject } from 'src/core/domain/models/value-object';
+
+interface Props {
+  value: {{valueObject.valueType}};
+}
+
+export class {{valueObject.className}} extends ValueObject<Props> {
+  public static from{{valueObject.valueTypeUpper}}({{valueObject.propName}}: {{valueObject.valueType}}): {{valueObject.className}} {
+    return new {{valueObject.className}}({ value: {{valueObject.propName}} });
+  }
+
+  get value(): {{valueObject.valueType}} {
+    return this.props.value;
+  }
+}

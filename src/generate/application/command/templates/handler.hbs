@@ -1,0 +1,13 @@
+
+import { Inject } from '@nestjs/common';
+
+import { CommandHandler, ICommandHandler } from 'src/core/application/commands';
+
+import { {{command.className}} } from './{{command.fileName}}';
+
+@CommandHandler({{command.className}})
+export class {{commandHandler.className}} implements ICommandHandler<{{command.className}}> {
+  constructor() {}
+
+  async execute(command: {{command.className}}) {}
+}

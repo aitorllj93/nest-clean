@@ -1,0 +1,10 @@
+
+import { DomainEvent } from 'src/core/domain/models/domain-event';
+
+export class {{event.className}} implements DomainEvent {
+  constructor(
+{{#each event.props}}
+    public readonly {{this.name}}: {{this.type}},
+{{/each}}
+  ) {}
+}

@@ -1,0 +1,12 @@
+
+export class {{exception.className}} extends Error {
+  public static withString(
+{{#each exception.params}}
+    {{this.name}}: {{this.type}},
+{{/each}}
+  ): {{exception.className}} {
+    return new {{exception.className}}(
+      `{{exception.message}}`,
+    );
+  }
+}

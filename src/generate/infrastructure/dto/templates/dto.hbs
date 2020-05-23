@@ -1,0 +1,8 @@
+import { ApiProperty } from '@nestjs/swagger';
+
+export class {{dto.className}} {
+{{#each dto.props}}
+  @ApiProperty()
+  readonly {{this.name}}!: {{this.type}};
+{{/each}}
+}
