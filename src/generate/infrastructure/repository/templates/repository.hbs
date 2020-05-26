@@ -1,3 +1,9 @@
 
-export class {{repository.className}} {
+import { EntityRepository, Repository } from 'typeorm';
+
+import { {{repository.model}} } from 'src/{{repository.module}}/domain/model/{{repository.modelFileName}}';
+import { {{repository.interface}} } from 'src/{{repository.module}}/domain/repository/{{repository.interfaceFileName}}';
+
+@EntityRepository({{repository.model}})
+export class {{repository.className}} extends Repository<{{repository.model}}> implements {{repository.interface}} {
 }

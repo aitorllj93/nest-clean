@@ -30,8 +30,9 @@ class BootstrapCommand extends Command {
         '@nestjs/common': undefined,
         '@nestjs/cqrs': undefined,
         '@nestjs/swagger': undefined,
+        'shallow-equal-object': undefined,
+        'typeorm': undefined,
         'uuid-validate': undefined,
-        'shallow-equal-object': undefined
       },
       {
         prefer: 'npm',
