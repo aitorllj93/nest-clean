@@ -62,12 +62,10 @@ USAGE
 <!-- commands -->
 * [`nest-clean bootstrap`](#nest-clean-bootstrap)
 * [`nest-clean generate`](#nest-clean-generate)
-* [`nest-clean hello`](#nest-clean-hello)
-* [`nest-clean help [COMMAND]`](#nest-clean-help-command)
 
 ## `nest-clean bootstrap`
 
-Describe the command here
+Initializes a `core` module inside your NestJS application 
 
 ```
 USAGE
@@ -82,7 +80,17 @@ _See code: [src\commands\bootstrap.js](https://github.com/d3v0ps/nest-clean/blob
 
 ## `nest-clean generate`
 
-Describe the command here
+Generates DDD structured files:
+
+* `application/command`
+* `domain/event`
+* `domain/exception`
+* `domain/model`
+* `domain/repository`
+* `domain/value-object`
+* `infrastructure/controller`
+* `infrastructure/dto`
+* `infrastructure/repository`
 
 ```
 USAGE
@@ -94,24 +102,6 @@ DESCRIPTION
 ```
 
 _See code: [src\commands\generate.js](https://github.com/d3v0ps/nest-clean/blob/v1.0.1/src\commands\generate.js)_
-
-## `nest-clean hello`
-
-Describe the command here
-
-```
-USAGE
-  $ nest-clean hello
-
-OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
-```
-
-_See code: [src\commands\hello.js](https://github.com/d3v0ps/nest-clean/blob/v1.0.1/src\commands\hello.js)_
 
 ## `nest-clean help [COMMAND]`
 
